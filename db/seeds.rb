@@ -1,7 +1,176 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+List.destroy_all
+
+i = 1
+while i < 13 do 
+    List.create(number: i, title: "#{i}")
+    i+=1
+end 
+
+#creating categories for the 12 lists
+#list 1
+Category.create(name: "A Boy's Name", list_id: 1)
+Category.create(name: "A River", list_id: 1)
+Category.create(name: "An Animal", list_id: 1)
+Category.create(name: "Things That Are Cold", list_id: 1)
+Category.create(name: "Insects", list_id: 1)
+Category.create(name: "TV Show", list_id: 1)
+Category.create(name: "Things That Grow", list_id: 1)
+Category.create(name: "Fruits", list_id: 1)
+Category.create(name: "Things That Are Black", list_id: 1)
+Category.create(name: "School Subject", list_id: 1)
+Category.create(name: "Movie Title", list_id: 1)
+Category.create(name: "Musical Instrument", list_id: 1)
+
+#list 2
+Category.create(name: "Authors", list_id: 2)
+Category.create(name: "Bodies of Water", list_id: 2)
+Category.create(name: "Species of Bird", list_id: 2)
+Category.create(name: "Countries", list_id: 2)
+Category.create(name: "Cartoon Characters", list_id: 2)
+Category.create(name: "Holidays", list_id: 2)
+Category.create(name: "Things That Are Cold", list_id: 2)
+Category.create(name: "Sports Team", list_id: 2)
+Category.create(name: "Articles of Clothing", list_id: 2)
+Category.create(name: "Name of a Relative", list_id: 2)
+Category.create(name: "Games", list_id: 2)
+Category.create(name: "Famous Athletes", list_id: 2)
+
+#list 3
+Category.create(name: "School Supplies", list_id: 3)
+Category.create(name: "Things That Are Hot", list_id: 3)
+Category.create(name: "Heroes", list_id: 3)
+Category.create(name: "Girl's Names", list_id: 3)
+Category.create(name: "Fears/Phobias", list_id: 3)
+Category.create(name: "Television Stars", list_id: 3)
+Category.create(name: "Colors", list_id: 3)
+Category.create(name: "Species of Fish", list_id: 3)
+Category.create(name: "Things That You Plant", list_id: 3)
+Category.create(name: "States", list_id: 3)
+Category.create(name: "Sports Equipment", list_id: 3)
+Category.create(name: "Tools", list_id: 3)
+
+#list 4
+Category.create(name: "Breakfast Foods", list_id: 4)
+Category.create(name: "Gifts", list_id: 4)
+Category.create(name: "Flowers", list_id: 4)
+Category.create(name: "Ice Cream Flavors", list_id: 4)
+Category.create(name: "A Drink", list_id: 4)
+Category.create(name: "Toys", list_id: 4)
+Category.create(name: "Cities", list_id: 4)
+Category.create(name: "Things in the Kitchen", list_id: 4)
+Category.create(name: "Found in the Ocean", list_id: 4)
+Category.create(name: "Nicknames", list_id: 4)
+Category.create(name: "Hobbies", list_id: 4)
+Category.create(name: "Parts of the Body", list_id: 4)
+
+#list 5
+Category.create(name: "Sandwiches", list_id: 5)
+Category.create(name: "Items in a Catalog", list_id: 5)
+Category.create(name: "World Leaders / Politicians", list_id: 5)
+Category.create(name: "School Subjects", list_id: 5)
+Category.create(name: "Excuses for Being Late", list_id: 5)
+Category.create(name: "Ice Cream Flavors", list_id: 5)
+Category.create(name: "Things That Jump or Bounce", list_id: 5)
+Category.create(name: "Television Stars", list_id: 5)
+Category.create(name: "Things in a Park", list_id: 5)
+Category.create(name: "Foreign Cities", list_id: 5)
+Category.create(name: "Stones/Gems", list_id: 5)
+Category.create(name: "Musical Instruments", list_id: 5)
+
+#list 6
+Category.create(name: "Nicknames", list_id: 6)
+Category.create(name: "Things in the Sky", list_id: 6)
+Category.create(name: "Pizza Toppings", list_id: 6)
+Category.create(name: "Colleges / Universities", list_id: 6)
+Category.create(name: "Wines", list_id: 6)
+Category.create(name: "Countries", list_id: 6)
+Category.create(name: "Things That Have Spots", list_id: 6)
+Category.create(name: "Historical Figures", list_id: 6)
+Category.create(name: "Fears / Phobias", list_id: 6)
+Category.create(name: "Terms of Endearment", list_id: 6)
+Category.create(name: "Items in This Room", list_id: 6)
+Category.create(name: "Drugs", list_id: 6)
+
+#list 7
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+Category.create(name: "", list_id: 7)
+
+#list 8
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+Category.create(name: "", list_id: 8)
+
+#list 9
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+Category.create(name: "", list_id: 9)
+
+#list 10
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+Category.create(name: "", list_id: 10)
+
+#list 11
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+Category.create(name: "", list_id: 11)
+
+#list 12
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
+Category.create(name: "", list_id: 12)
