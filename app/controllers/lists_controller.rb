@@ -11,7 +11,15 @@ class ListsController < ApplicationController
     end 
 
     def randomList
-        list = List.all.sample
-        render json: list, except: [:created_at, :updated_at], include: :categories
+        listArray = []
+        i = 0
+        while i < 3 do
+            list = List.all.sample
+            if !listArray.include?(list)
+                listArray.push(list)
+                i+=1
+            end
+        end
+        render json: listArray, except: [:created_at, :updated_at], include: :categories
     end
 end
