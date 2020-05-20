@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_20_152635) do
+ActiveRecord::Schema.define(version: 2020_05_20_193835) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,18 @@ ActiveRecord::Schema.define(version: 2020_05_20_152635) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "letter"
+    t.string "qOne"
+    t.string "qTwo"
+    t.string "qThree"
+    t.string "qFour"
+    t.string "qFive"
+    t.string "qSix"
+    t.string "qSeven"
+    t.string "qEight"
+    t.string "qNine"
+    t.string "qTen"
+    t.string "qEleven"
+    t.string "qTwelve"
     t.index ["game_id"], name: "index_rounds_on_game_id"
   end
 
